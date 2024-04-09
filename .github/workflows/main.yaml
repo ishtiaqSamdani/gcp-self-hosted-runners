@@ -1,17 +1,16 @@
-name: Example Workflow 1
+name: Current VM Information 2
 
-on: [push]
+on:
+  push:
 
 jobs:
-  build:
+  vm_info:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Step 1
-      run: echo "This is Step 1"
-    
-    - name: Sleep for 1 minute
-      run: sleep 60
-    
-    - name: Step 2
-      run: hostname
+    - name: Display current VM information
+      run: |
+        echo "Operating System: ${{ runner.os }}"
+        echo "Runner Type: ${{ runner.runnerType }}"
+        echo "Hostname: ${{ runner.hostname }}"
+        echo "Virtual Environment Image: ${{ runner.image }}"
+        sleep 60

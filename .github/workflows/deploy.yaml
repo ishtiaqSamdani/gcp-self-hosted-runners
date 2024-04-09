@@ -1,0 +1,19 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Add your build, test, and deployment steps here
+    # Example:
+    - name: Run tests
+      run: |
+        hostame
+
+    # Add more steps as needed

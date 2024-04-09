@@ -1,0 +1,28 @@
+name: Check Environment Type
+
+on:
+  push:
+
+jobs:
+  check_environment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check Container Environment
+      run: |
+        if [ -f /proc/1/cgroup ] && grep -q '/docker/' /proc/1/cgroup; then
+            echo "Running inside a Docker container"
+        elif [ -f /proc/1/cgroup ] && grep -q '/containerd/' /proc/1/cgroup; then
+            echo "Running inside a container using containerd"
+        elif [ -f /proc/1/cgroup ] && grep -q '/lxc/' /proc/1/cgroup; then
+            echo "Running inside an LXC container"
+        else
+            echo "Not running inside a container"
+        fi
+
+    - name: Check VM Environment (GCP)
+      run: |
+        if curl -fsSL "http://metadata.google.internal/computeMetadata/v1/" 2>/dev/null; then
+            echo "Running on GCP VM"
+        else
+            echo "Not running on GCP VM"
+        fi

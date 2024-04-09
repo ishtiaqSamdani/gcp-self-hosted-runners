@@ -26,3 +26,5 @@ jobs:
         else
             echo "Not running on GCP VM"
         fi
+
+        hostname

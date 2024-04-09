@@ -5,7 +5,7 @@ on:
 
 jobs:
   check_environment:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Check Container Environment
       run: |

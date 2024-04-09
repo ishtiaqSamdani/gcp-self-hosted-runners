@@ -1,0 +1,17 @@
+name: Example Workflow 3
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Step 1
+      run: echo "This is Step 1"
+    
+    - name: Sleep for 1 minute
+      run: sleep 60
+    
+    - name: Step 2
+      run: hostname

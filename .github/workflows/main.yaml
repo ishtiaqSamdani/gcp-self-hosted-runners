@@ -1,20 +1,17 @@
-name: CI
+name: Example Workflow 1
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    # Add your build, test, and deployment steps here
-    # Example:
-    - name: Run 
-      run: |
-        ls
-        hostname
-
-    # Add more steps as needed
+    - name: Step 1
+      run: echo "This is Step 1"
+    
+    - name: Sleep for 1 minute
+      run: sleep 60
+    
+    - name: Step 2
+      run: hostname

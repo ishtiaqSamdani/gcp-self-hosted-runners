@@ -5,7 +5,7 @@ on:
 
 jobs:
   vm_info:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Display current VM information
       run: |

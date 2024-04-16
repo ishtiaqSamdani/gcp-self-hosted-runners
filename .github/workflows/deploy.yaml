@@ -9,8 +9,5 @@ jobs:
     steps:
     - name: Display current VM information
       run: |
-        echo "Operating System: ${{ runner.os }}"
-        echo "Runner Type: ${{ runner.runnerType }}"
-        echo "Hostname: ${{ runner.hostname }}"
-        echo "Virtual Environment Image: ${{ runner.image }}"
         sleep 60
+        hostname

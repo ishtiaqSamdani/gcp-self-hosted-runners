@@ -6,7 +6,7 @@ on:
 
 jobs:
   vm_info:
-    runs-on: [self-hosted, flash-2cpu-4GB]
+    runs-on: [self-hosted, flash-2cpsdsadu-4GB]
     steps:
     - name: Display current VM information
       run: |

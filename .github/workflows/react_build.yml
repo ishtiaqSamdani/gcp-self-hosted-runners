@@ -1,4 +1,4 @@
-name: bootcamp146 frontend deployment
+name: frontend build and push
 on:
   push:
     branches:
@@ -21,18 +21,17 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
-      - name: cache node modules
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: frontend/node_modules
-          key: ${{ runner.os }}-frontend-node_modules-${{ hashFiles('frontend/package.json') }}
+    #   - name: cache node modules
+    #     uses: actions/cache@v3
+    #     id: cache
+    #     with:
+    #       path: frontend/node_modules
+    #       key: ${{ runner.os }}-frontend-node_modules-${{ hashFiles('frontend/package.json') }}
       - name: setup node version
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: install the dependencies
-        if: steps.cache.outputs.cache-hit!=true
         run: npm install
 
       # - name: create the .env file

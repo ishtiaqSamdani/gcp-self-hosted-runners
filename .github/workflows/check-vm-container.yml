@@ -1,7 +1,8 @@
 name: Check Environment Type
 
 on:
-  push:
+  # push:
+    workflow_dispatch:
 
 jobs:
   check_environment:

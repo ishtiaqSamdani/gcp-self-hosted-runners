@@ -1,7 +1,8 @@
 name: Current VM Information 3
 
 on:
-  push:
+  # push:
+    workflow_dispatch:
 
 jobs:
   vm_info:

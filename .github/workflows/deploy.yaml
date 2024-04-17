@@ -5,7 +5,7 @@ on:
     # workflow_dispatch:
 
 jobs:
-  vm_info:
+  vm_info_job1:
     runs-on: flash-2cpu-4GB
     steps:
     - name: Display current VM information

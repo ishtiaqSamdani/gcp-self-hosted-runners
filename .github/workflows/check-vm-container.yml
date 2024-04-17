@@ -6,7 +6,7 @@ on:
 
 jobs:
   check_environment:
-    runs-on: self-hosted
+    runs-on: flash-2cpu-2GB
     steps:
     - name: Check Container Environment
       run: |

@@ -1,8 +1,1 @@
 # gcp-self-hosted-runners
-
-
-   
-
-
-
-

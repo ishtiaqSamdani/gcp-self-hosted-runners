@@ -1,0 +1,74 @@
+name: bootcamp146 frontend deployment
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - ".github/workflows/react_build.yml"
+      - "frontend/**"
+      - "!frontend/src/db.json"
+      - '!frontend/mockserver.Dockerfile'
+env:
+    GITHUB_USER: ishtiaqsamdani
+jobs:
+  frontend:
+    name: frontend image build and deploy
+    timeout-minutes: 10
+    runs-on: self-hosted
+    defaults:
+      run:
+        working-directory: frontend/
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: cache node modules
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: frontend/node_modules
+          key: ${{ runner.os }}-frontend-node_modules-${{ hashFiles('frontend/package.json') }}
+      - name: setup node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: install the dependencies
+        if: steps.cache.outputs.cache-hit!=true
+        run: npm install
+
+      # - name: create the .env file
+      #   run: echo "${{ secrets.FRONTEND_ENV }}" > .env
+        
+      - name: create the build folder
+        run: npm run build
+
+      - name: copy assets from public folder into dist
+        run: cp -r public/assets build/
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ env.GITHUB_USER }}
+          password: ${{ secrets.CR_PAT }}
+          registry: ghcr.io
+      - name: build and push frontend image
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          context: frontend/          
+          tags: |
+            ghcr.io/${{ env.GITHUB_USER }}/fe-test-self-hosted:latest
+            ghcr.io/${{ env.GITHUB_USER }}/fe-test-self-hosted:v${{ github.run_number }}
+
+            
+    #   - name: configure aws
+    #     uses: aws-actions/configure-aws-credentials@v2
+    #     with:
+    #       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #       aws-region:  ${{secrets.AWS_EKS_REGION}}
+    #   - name: update kubeconfig
+    #     run: aws eks update-kubeconfig --name ${{ secrets.CLUSTER_NAME }}
+    #   - name: update the frontend image
+    #     run: kubectl set image deployment/frontend frontend-pod=ghcr.io/${{ env.GITHUB_USER }}/bc146-fe:v${{ github.run_number }}
+    #   - name: remove the kubeconfig file
+    #     run: rm ~/.kube -rf

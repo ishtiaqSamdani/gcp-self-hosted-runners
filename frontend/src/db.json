@@ -1,0 +1,783 @@
+{
+  "quickBooks": [
+    {
+      "id": 1,
+      "name": "Travel"
+    },
+    {
+      "id": 2,
+      "name": "Expense"
+    },
+    {
+      "id": 3,
+      "name": "Travel Meals"
+    },
+    {
+      "id": 4,
+      "name": "Hotels"
+    },
+    {
+      "id": 5,
+      "name": "Automobile and Fuel"
+    },
+    {
+      "id": 6,
+      "name": "Dues & Subscriptions"
+    }
+  ],
+  "vendors": [
+    {
+      "id": 2,
+      "displayName": "H&M",
+      "shortName": "casio"
+    },
+    {
+      "id": 3,
+      "displayName": "Renuar",
+      "shortName": "arscris"
+    },
+    {
+      "id": 4,
+      "displayName": "Zara",
+      "shortName": "deniel_we"
+    },
+    {
+      "id": 5,
+      "displayName": "Bershka",
+      "shortName": "shop123"
+    },
+    {
+      "id": 6,
+      "displayName": "Stradivarius",
+      "shortName": "demode"
+    },
+    {
+      "id": 7,
+      "displayName": "American Eagle",
+      "shortName": "shopsiue"
+    },
+    {
+      "id": 8,
+      "displayName": "Lyft",
+      "shortName": "arschris"
+    },
+    {
+      "id": 9,
+      "displayName": "Lyft",
+      "shortName": "deniel_we"
+    },
+    {
+      "id": 10,
+      "displayName": "Lyft",
+      "shortName": "shop123"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Hellena John",
+      "dateOfJoining": "May 16, 2005"
+    },
+    {
+      "id": 2,
+      "name": "Afolabi David",
+      "dateOfJoining": "Aug 27, 2019"
+    },
+    {
+      "id": 3,
+      "name": "David Oshodi",
+      "dateOfJoining": "Nov 16, 2016"
+    },
+    {
+      "id": 4,
+      "name": "Adekunle Fisayo",
+      "dateOfJoining": "Jan 31, 2000"
+    },
+    {
+      "id": 5,
+      "name": "Mjob Jacob",
+      "dateOfJoining": "Apr 09, 2011"
+    },
+    {
+      "id": 6,
+      "name": "James Friday",
+      "dateOfJoining": "Mar 22, 2013"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 7,
+      "vendorId": 3,
+      "amount": "$42,000",
+      "date": "Sep 19, 2010",
+      "employeeId": 2,
+      "receipt": "#526534",
+      "memo": "21-00004",
+      "quickBookId": 1
+    },
+    {
+      "id": 8,
+      "vendorId": 5,
+      "amount": "$21,000",
+      "date": "Aug 7, 2007",
+      "employeeId": 4,
+      "receipt": "#200257",
+      "memo": "21-00006",
+      "quickBookId": 2
+    },
+    {
+      "id": 9,
+      "vendorId": 6,
+      "amount": "$17,000",
+      "date": "May 17, 2005",
+      "employeeId": 5,
+      "receipt": "#526587",
+      "memo": "21-00007",
+      "quickBookId": 3
+    },
+    {
+      "id": 10,
+      "vendorId": 7,
+      "amount": "$12,000",
+      "date": "Aug 27, 2019",
+      "employeeId": 6,
+      "receipt": "#105986",
+      "memo": "20-00400",
+      "quickBookId": 2
+    },
+    {
+      "id": 4,
+      "vendorId": 10,
+      "amount": "$21,000",
+      "date": "Apr 7, 2019",
+      "employeeId": 4,
+      "receipt": "#526589",
+      "memo": "21-00005",
+      "quickBookId": 3
+    },
+    {
+      "id": 2,
+      "vendorId": 8,
+      "amount": "$42,000",
+      "date": "Sep 19, 2010",
+      "employeeId": 2,
+      "receipt": "#526534",
+      "memo": "21-00004",
+      "quickBookId": 2
+    },
+    {
+      "id": 3,
+      "vendorId": 9,
+      "amount": "$42,000",
+      "date": "Apr 28, 2004",
+      "employeeId": 3,
+      "receipt": "#526520",
+      "memo": "21-00010",
+      "quickBookId": 4
+    },
+    {
+      "id": 5,
+      "vendorId": 4,
+      "amount": "$37,000",
+      "date": "Aug 28, 2019",
+      "employeeId": 3,
+      "receipt": "#526520",
+      "memo": "21-00010",
+      "quickBookId": 4
+    }
+  ],
+  "categoryRules": [],
+  "merchantRules": [
+    {
+      "vendorName": "Renuar",
+      "id": 1,
+      "quickBookId": 2,
+      "userId": 1
+    },
+    {
+      "vendorName": "Renuar",
+      "id": 2,
+      "quickBookId": 1,
+      "userId": 1
+    },
+    {
+      "vendorName": "Renuar",
+      "quickBookId": 6,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "vendorName": "Renuar",
+      "quickBookId": 4,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "vendorName": "Renuar",
+      "quickBookId": 1,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "vendorName": "Bershka",
+      "quickBookId": 3,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "vendorName": "Zara",
+      "quickBookId": 4,
+      "userId": 1,
+      "id": 7
+    }
+  ],
+  "ramps": [
+    {
+      "id": 1,
+      "name": "Advertising"
+    },
+    {
+      "id": 2,
+      "name": "Shipping"
+    },
+    {
+      "id": 3,
+      "name": "Airlines"
+    },
+    {
+      "id": 4,
+      "name": "Fuel and Gas"
+    },
+    {
+      "id": 5,
+      "name": "Saas/Software"
+    },
+    {
+      "name": "flight",
+      "id": 6
+    },
+    {
+      "name": "mytravel",
+      "id": 7
+    },
+    {
+      "name": "train",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "name",
+      "email": "name@gmail.com",
+      "password": "Test@123",
+      "id": 4
+    },
+    {
+      "name": "name",
+      "email": "name@gmail.com",
+      "password": "Test@123",
+      "id": 5
+    },
+    {
+      "name": "name",
+      "email": "name@gamil.com",
+      "password": "Test@123",
+      "id": 6
+    },
+    {
+      "name": "name",
+      "email": "name@test.com",
+      "password": "Test@123",
+      "id": 7
+    },
+    {
+      "name": "name",
+      "email": "name@gmail.com",
+      "password": "name@123E",
+      "id": 8
+    },
+    {
+      "name": "name",
+      "email": "name@gmail.com",
+      "password": "name@123E",
+      "id": 9
+    },
+    {
+      "name": "name",
+      "email": "name@gmail.com",
+      "password": "Name@123",
+      "id": 10
+    },
+    {
+      "name": "name",
+      "email": "name@gmail.com",
+      "password": "Test@124",
+      "id": 11
+    },
+    {
+      "name": "name",
+      "email": "name89@gmail.com",
+      "password": "Test@123",
+      "id": 12
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 13
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 14
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 15
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 16
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 17
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 18
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 19
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 20
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 21
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 22
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 23
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 24
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 25
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 26
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 27
+    },
+    {
+      "name": "Uma Dharshini R",
+      "email": "umadharshini.r@zemosolabs.com",
+      "password": "",
+      "id": 28
+    },
+    {
+      "name": "Uma Dharshini",
+      "email": "uma.mit51@gmail.com",
+      "password": "",
+      "id": 29
+    },
+    {
+      "name": "Jeeva A",
+      "email": "java.troi85@gmail.com",
+      "password": "",
+      "id": 30
+    }
+  ],
+  "bills": [
+    {
+      "employee": {
+        "name": "Marvin McKinney",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 1,
+      "status": "approved",
+      "paymentDate": "2024-01-16T12:02:23.096Z"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 2,
+      "status": "approved",
+      "paymentDate": "2024-01-16T12:21:41.465Z"
+    },
+    {
+      "employee": {
+        "name": "Ralph Edwards",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 3,
+      "status": "approved",
+      "paymentDate": "2024-01-18T07:36:23.054Z"
+    },
+    {
+      "employee": {
+        "name": "Julie Mendez",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 4,
+      "status": "drafted"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 5,
+      "status": "drafted"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 9,
+      "status": "drafted"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 11,
+      "status": "approved",
+      "paymentDate": "2024-01-17T06:10:09.963Z"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 10,
+      "status": "drafted"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 12,
+      "status": "drafted"
+    },
+    {
+      "employee": {
+        "name": "Ralph Edwards",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 6,
+      "status": "approved",
+      "paymentDate": "2024-01-10T07:40:39.983Z"
+    },
+    {
+      "id": 10,
+      "invoiceDate": "2024-01-14",
+      "invoiceNumber": "INV001",
+      "dueDate": "2024-01-28",
+      "amount": 500,
+      "accountNumber": "ACC123",
+      "status": "Pending",
+      "userId": 1,
+      "employee": {
+        "name": "John Doe",
+        "date": "May 16, 2005"
+      },
+      "transactionDate": "2024-01-14"
+    },
+    {
+      "invoiceDate": "2024-07-13",
+      "invoiceNumber": "INV-0012",
+      "dueDate": "2024-08-13",
+      "amount": 136,
+      "accountNumber": "4214453308",
+      "status": "Pending",
+      "userId": 1,
+      "employee": {
+        "name": "Rich ard",
+        "date": "May 16, 2005"
+      },
+      "transactionDate": "2024-07-13",
+      "id": 11
+    },
+    {
+      "invoiceDate": "2024-07-13",
+      "invoiceNumber": "INV-0012",
+      "dueDate": "2024-08-13",
+      "amount": 136,
+      "accountNumber": "5875439267",
+      "status": "Pending",
+      "userId": 1,
+      "employee": {
+        "name": "Richard Glenn",
+        "date": "May 16, 2005"
+      },
+      "transactionDate": "2024-07-13",
+      "id": 12
+    },
+    {
+      "invoiceDate": "2024-07-13",
+      "invoiceNumber": "INV-0012",
+      "dueDate": "2024-08-13",
+      "amount": 136,
+      "accountNumber": "2316373210",
+      "status": "Pending",
+      "userId": 4,
+      "employee": {
+        "name": "Richard Glenn",
+        "date": "2024-07-13"
+      },
+      "transactionDate": "2024-07-13",
+      "id": 14
+    },
+    {
+      "invoiceDate": "2024-07-13",
+      "invoiceNumber": "INV-0012",
+      "dueDate": "2024-08-13",
+      "amount": 136,
+      "accountNumber": "3508213225",
+      "status": "Pending",
+      "userId": 4,
+      "employee": {
+        "name": "Richard Glenn",
+        "date": "2024-07-13"
+      },
+      "transactionDate": "2024-07-13",
+      "id": 15
+    }
+  ],
+  "drafts": [
+    {
+      "employee": {
+        "name": "Marvin McKinney",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 1,
+      "status": "approved",
+      "paymentDate": "Apr 09, 2011"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 2,
+      "status": "approved",
+      "paymentDate": "Apr 09, 2011"
+    },
+    {
+      "employee": {
+        "name": "Ralph Edwards",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 3,
+      "status": "approved",
+      "paymentDate": "Apr 09, 2011"
+    },
+    {
+      "employee": {
+        "name": "Julie Mendez",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 4,
+      "status": "approved",
+      "paymentDate": "2024-01-10T07:17:40.069Z"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 5,
+      "status": "approved",
+      "paymentDate": "2024-01-10T07:20:29.979Z"
+    },
+    {
+      "employee": {
+        "name": "Ralph Edwards",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 6,
+      "status": "approved",
+      "paymentDate": "2024-01-10T07:40:39.983Z"
+    },
+    {
+      "employee": {
+        "name": "Julie Mendez",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 7,
+      "status": "approved",
+      "paymentDate": "2024-01-10T09:29:44.144Z"
+    },
+    {
+      "employee": {
+        "name": "Leslie Alexander",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 8,
+      "status": "approved",
+      "paymentDate": "2024-01-10T09:29:44.145Z"
+    },
+    {
+      "employee": {
+        "name": "Ralph Edwards",
+        "date": "May 16, 2005"
+      },
+      "amount": 46000,
+      "dueDate": "Apr 09, 2011",
+      "invoiceDate": "Apr 09, 2011",
+      "invoiceNumber": "#526587",
+      "accountNumber": "5205896212",
+      "id": 9,
+      "status": "drafted"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons/spinner" opacity="0.6">
+<path id="Glyph" d="M58.125 31C58.125 25.6352 56.5341 20.3908 53.5536 15.9302C50.5731 11.4695 46.3367 7.99279 41.3803 5.93977C36.4238 3.88674 30.9699 3.34958 25.7082 4.3962C20.4464 5.44282 15.6132 8.02623 11.8197 11.8197C8.02623 15.6132 5.44282 20.4464 4.3962 25.7082C3.34958 30.9699 3.88674 36.4238 5.93977 41.3803C7.99279 46.3367 11.4695 50.5731 15.9302 53.5536C20.3908 56.5341 25.6352 58.125 31 58.125" stroke="url(#paint0_linear_313_17494)" stroke-linecap="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_313_17494" x1="58.125" y1="17.3274" x2="18.2615" y2="67.4898" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4F566B"/>
+<stop offset="0.427083" stop-color="#4F566B" stop-opacity="0.5573"/>
+<stop offset="1" stop-color="#4F566B" stop-opacity="0.3"/>
+</linearGradient>
+</defs>
+</svg>

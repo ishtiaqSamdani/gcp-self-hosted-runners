@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Segoe-Regular';
+  src: url('../public/assets/fonts/Segoe\ UI\ Light.ttf');
+}
+
+@font-face {
+  font-family: 'Segoe-Bold';
+  src: url('../public/assets/fonts/Segoe\ UI.ttf');
+}
+
+@font-face {
+  font-family: 'Segoe-SemiBold';
+  src: url('../public/assets/fonts/Segoe\ UI\ Semibold.ttf');
+}
+
+* {
+  font-family: 'Segoe-Regular', 'Segoe-Bold', 'Segoe-SemiBold', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

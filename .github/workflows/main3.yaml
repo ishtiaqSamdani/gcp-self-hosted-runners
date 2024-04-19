@@ -6,7 +6,7 @@ on:
 
 jobs:
   vm_info_job2:
-    runs-on: flash-2cpu-4GB
+    runs-on: flash-2cpu-2GB
     steps:
     - name: Display current VM information
       run: |

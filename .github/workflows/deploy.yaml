@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Display current VM information
       run: |
-        sleep 60
+        sleep 10
         hostname
 
 

@@ -11,7 +11,12 @@ export RUNNER_TOKEN=$(echo $payload | jq .token --raw-output)
 # v4
 RUNNER_CPU="2"
 RUNNER_MEMORY="4GB"
-RUNNER_NAME="flash-${RUNNER_CPU}cpu-${RUNNER_MEMORY}"
+RUNNER_NAME_ARGUMENT_PASSED=$1
+RUNNER_NAME="quicksilver-${RUNNER_CPU}cpu-${RUNNER_MEMORY}"
+
+if [ -n "$RUNNER_NAME_ARGUMENT_PASSED" ]; then
+    RUNNER_NAME=$RUNNER_NAME_ARGUMENT_PASSED
+fi
 
 echo "Runner Name: ${RUNNER_NAME}"
 
@@ -20,7 +25,7 @@ random_string() {
 }
 
 ./config.sh \
-    --name "flash-${RUNNER_NAME}-$(random_string)" \
+    --name "${RUNNER_NAME}-$(random_string)" \
     --token ${RUNNER_TOKEN} \
     --labels ${RUNNER_NAME} \
     --url https://github.com/${GITHUB_OWNER} \

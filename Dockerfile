@@ -47,3 +47,4 @@ RUN mkdir /work && chown github:github /work
 USER github
 
 ENTRYPOINT ["/actions-runner/entrypoint.sh"]
+
